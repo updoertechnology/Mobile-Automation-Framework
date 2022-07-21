@@ -1,4 +1,4 @@
-package com.HiFlow.screen;
+package com.screen;
 
 import java.time.Duration;
 
@@ -13,22 +13,26 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class RideDeatilScreen extends ActionPage {
+public class SearchResultScreen extends ActionPage{
 WebDriver driver = DriverManager.getWebDriver();	
 	
-	@AndroidFindBy(xpath  = "//android.view.ViewGroup[@index=3]")
+	@AndroidFindBy(xpath  = "//android.widget.TextView[@index=2]")
 	@iOSXCUITFindBy(accessibility = "")
-	MobileElement rideDetailScreen;
+	MobileElement rideOverview;
 	
-	public RideDeatilScreen() {
+	public SearchResultScreen() {
     	Duration d = Duration.ofSeconds(10L);
     	PageFactory.initElements(new AppiumFieldDecorator(
                 DriverManager.getWebDriver(),d), this);
 	}
 	
-	public void verifyRideDetailScreen() {
-		isElementPresent(rideDetailScreen);
+	public void clickOnSearchedRide() {
+		if(isElementPresent(rideOverview)) {
+			click(rideOverview, "Searched Result");
+		}
+		else {
+			System.out.println("There is no such ride");
+		}
 	}
-
 
 }

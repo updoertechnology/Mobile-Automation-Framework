@@ -1,4 +1,4 @@
-package com.HiFlow.screen;
+package com.screen;
 
 import java.time.Duration; 
 

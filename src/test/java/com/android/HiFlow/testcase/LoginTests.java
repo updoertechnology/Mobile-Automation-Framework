@@ -5,16 +5,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.HiFlow.screen.HomeScreen;
-import com.HiFlow.screen.InstructionScreen;
-import com.HiFlow.screen.LogInScren;
-import com.HiFlow.screen.RideDeatilScreen;
-import com.HiFlow.screen.SearchResultScreen;
 import com.mobile.FrameWorkAssertion.FrameWorkSoftAssertions;
 import com.mobile.Listeners.AnnotationTransformers;
 import com.mobile.Listeners.ListenersClass;
 import com.mobile.driver.DriverManager;
 import com.mobile.utils.PropertyUtils;
+import com.screen.HomeScreen;
+import com.screen.InstructionScreen;
+import com.screen.LogInScren;
+import com.screen.RideDeatilScreen;
+import com.screen.SearchResultScreen;
 
 @Listeners({ ListenersClass.class, AnnotationTransformers.class })
 public class LoginTests extends BaseTest{
