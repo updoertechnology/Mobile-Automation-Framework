@@ -1,4 +1,4 @@
-package com.android.HiFlow.testcase;
+package com.android.testcase;
 
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;

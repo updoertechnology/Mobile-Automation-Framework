@@ -1,4 +1,4 @@
-package com.android.HiFlow.testcase;
+package com.android.testcase;
 
 import org.openqa.selenium.remote.RemoteWebDriver; 
 import org.testng.annotations.BeforeMethod;
